@@ -1,3 +1,42 @@
+
+
+
 body {
   background-color: red;
+  justify-content: center;
+  text-align: center;
+
+}
+.box {
+  height: 38px;
+  width: 38px;
+  background: blue;
+  border-radius: 20px;
+  justify-content: center;
+  text-align: center;
+  display: inline-block;
+  margin: 5px;
+
+}
+.coinsMac, .coinsHuman {
+  background-color: black;
+  border: 2px;
+  border-radius: 20px;
+  display: inline-block;
+  height: 30px;
+  width: 60px;
+}
+.square {
+  background-color: white;
+  border-radius: 10px;
+  height: 310px;
+  width: 375px;
+  margin: 60px;
+}
+.option {
+
+}
+
+footer {
+  margin: 50px;
 }
