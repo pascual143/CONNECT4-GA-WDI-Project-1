@@ -1,111 +1,76 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style/style.css">
-    <script type="text/javascript" src="scripts/main.js">
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>CONNECT 4</title>
+		<link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" scr="scripts/main.js">
+   </script>
 
-    </script>
-    <title>CONNECT 4</title>
-  </head>
-  <header>
-    <h1>CONNECT 4</h1>
-  </header>
+	</head>
+	<body onload="beginGame()">
+		<!-- This is the heading HTML.  It is instructions on how to play -->
+		<h1>CONNECT 4</h1>
+		<p>To win Connect Four you must be the first player to get four of your colored checkers
+      in a row either horizontally, vertically or diagonally. Contents: Connect Four will come with a grid,
+      2 end supports, 21 red checkers and 21 black checkers, and the official Connect Four game rules and instructions.</p>
+		<p></p>
 
-<body>
-
-    <form>
-      <script type="text/javascript">
-      function changeText(){
-      	document.getElementById('name').innerHTML = 'boldStuff';
-      }
-      </script>
-      <p>Player number one called <b id='boldStuff'></b> </p>
-
-      <input type='button' onclick='changeText()' value='Player Name One'/>
-      <input id="name" type="text" name="" value="">
-      <div class="choosePlayerOne">CHOOSE A TOKEN
-        <input type="button" name="" value="gold">
-        <input type="button" name="" value="purple">
-      </div>
-
-      <p>Player number one called <b id='boldStuff'></b> </p>
-
-      <input type='button' onclick='changeText()' value='Player Name One'/>
-      <input id="name" type="text" name="" value="">
+		<!-- The begin_game button will run "beginGame()" function when clicked.  The () is required at the end to show it is a
+		function, but no parameters are displaying -->
+		<button id="begin_game" onclick="beginGame()">Begin Game</button>
 
 
-   </form>
+		<!-- All the action takes place in the gameboard, so I'm containing the gameboard in a div with the ID "gameboard" so that
+		you can always target any items within easily. -->
+		<div id="gameboard">
+			<!-- The game_info div allows game-specific information to easily be displayed -->
+			<div id="game_info">
+			</div>
+			<!-- The game table is the actual board.  A table seems the most logical structure for the data, as tables have rows and columns
+			although you most certainly could use divs, or other HTML elements.  The top row (and tablehead - 'thead') is reserved for the
+			buttons to drop the game pieces. -->
+			<table id="game_table">
+				<thead>
+					<tr>
+						<!-- Set up the buttons that will drop the pieces in to the column.  This could be programmatically generated like
+						the rows/columns below, but since it was just 7, it wouldn't really save code -->
+						<td><button onclick="drop(0)">Drop</button></td>
+						<td><button onclick="drop(1)">Drop</button></td>
+						<td><button onclick="drop(2)">Drop</button></td>
+						<td><button onclick="drop(3)">Drop</button></td>
+						<td><button onclick="drop(4)">Drop</button></td>
+						<td><button onclick="drop(5)">Drop</button></td>
+						<td><button onclick="drop(6)">Drop</button></td>
+					</tr>
+				</thead>
+				<script>
+				//To make the code much more compact, javascript will actually be used to write the code for the game board
+				/*
+				a for loop is a basic concept for running a set of code multiple times.  It has 3 parameters, the first is a variable
+				name, in this case I used "row" and "col" I then set the value to 0.  The next parameter is 'under what conditions should
+				i repeat the code below.  As long as that 2nd condition is "true" the code below will run.  The last parameter
+				is the increment.  This is run every time the code below is run.  In the loops below, I have i++ and j++ which means
+				"add one to the value of row/col"
+				*/
+				for (var row=0; row<=5; row++) {
+					/*document.writeln() function will write HTML code to the browser.  If you "inspect" this page after the browser has
+					rendered the page, you will see a bunch of HTML
+					write the start of the table row tag
+					*/
+					document.writeln("<tr>");
+					for (var col=0; col<=6; col++) {
+						//write each table data element - with the row and col variables in the ID so it can be accessed later.
+						document.writeln("<td id='square_" + row + "_"+ col +"' class='board_square'></td>");
+					}
+					//write the closing table row tag.
+					document.writeln("</tr>");
+				}
 
-      <div class="">
-        Player Two name: <input type="submit" name="namePlayerTwo"><br>
-      </div>
-
-
-  <div class="square">
-    <div class="buttons">
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-      <div class="box" onclick="change"></div>
-    </div>
-    <!-- <div class="grid">
-      grid
-    </div> -->
-        </div>
-
-        <div class="coinsMac">COINS PASCUAL
-        </div>
-
-        <div class="coinsHuman">COINS PAPANATAS
-        </div>
-
-<div class="wins">
-  <span id="wins">winner</span>
-</div>
-
-  <div class="windowWinner">
-   </div>
-
-
-  </body>
-  <footer><small>&copy; Copyright 2019, Studio Vila</small></footer>
+				</script>
+			</table>
+			<!-- game_status is a place for the game to provide status updates. -->
+			<div id="game_status">
+			</div>
+		</div>
+	</body>
 </html>

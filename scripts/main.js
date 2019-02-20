@@ -1,247 +1,166 @@
-// // const player = playerOne
-//
-// //
-// // const grid = function() {
-// //   for (let i = 0; i < length + 7; i++) {
-// //     grid[i]
-// //   }
-// // }
-//
-// // const namePlayerOne = prompt()
-// // function welcome(){
-// //   const name = document.getElementById('welcome')
-// //   if (name.value === ''){
-// //     return true
-// //   } else {
-// //     return false
-// //   }
-// // }
-// // if (namePlayerOne === true){
-// //   alert('we need your name to start')
-// //
-// //   document.write('welcome')
-// //   welcome()
-// // }
-//
-// // function myFunction() {
-// //   var x = document.getElementById('myText').name
-// //   document.getElementById('name').innerHTML = x
-// // }
-// // myFunction()
-// // document.getElementById('name').innerHTML = welcome
-//
-//
-//
-// //function change(){
-// //FUNCTION CHOOSE coins
-// //buttons
-// var coinsGold = gold
-// var coinsPurple = purple
-//
-//
-// //FUNCTION PLAYERONE
-// var coins = gold
-// var coins = purple
-// function playerOne(){
-//   if (playerOne === gold) {
-//     return true
-//   } else {
-//     return false
-//   }
-// }
-// playerOne()
-//
-//
-// }
-// //FUNCTION PLAYERTWO
-// function playerTwo(){
-//   if (playerTwo === purple) {
-//     return true
-//   } else {
-//     return false
-//   }
-// }
-// playerTwo()
-// //FUNCTION PLAYERMACHINE
-// // const mac = Math.floor(Math.random())
-// //FUNCTION IS FULL
-//
-//
-// function option (human) {
-//
-//   const array = [
-//
-//     [0,1,2,3,4,5,6],
-//     [7,8,9,10,11,12,13],
-//     [14,15,16,17,18,19,20],
-//     [21,22,23,24,25,26,27],
-//     [28,29,30,31,32,33,34],
-//     [35,36,37,38,39,40,41]
-//   ]
-//
-// }
-//
-//   //FUNCTION 4 IN A ROW(MAKE THE ROWS)
-//   const wins = [
-//     //VERTICALLY
-//     wins[0] = new array[0, 7, 14, 21, 28, 35],
-//     wins[1] = new array[1, 8, 15, 22, 29, 36],
-//     wins[2] = new array[2, 9, 16, 23, 30, 37],
-//     wins[3] = new array[3, 10, 17, 24, 31, 38],
-//     wins[4] = new array[4, 11, 18, 25, 32, 39],
-//     wins[5] = new array[5, 12, 19, 26, 33, 40],
-//     wins[6] = new array[6, 13, 20, 27, 34, 41],
-//
-//
-//     //HORIZONTALY
-//
-//     wins[7] = new array[0,1,2,3,4,5,6],
-//     wins[8] = new array[7,8,9,10,11,12,13],
-//     wins[11] = new array[14,15,16,17,18,19,20],
-//     wins[12] = new array[21,22,23,24,25,26,27],
-//     wins[13] = new array[28,29,30,31,32,33,34],
-//     wins[14] = new array[35,36,37,38,39,40,41],
-//
-//     //DIAGONAL
-//
-//     wins [15] = new array[35, 29, 23, 17, 11, 5],
-//     wins [16] = new array[28, 22, 16, 10, 4],
-//     wins [17] = new array[21, 15, 9, 3],
-//     wins [18] = new array[36, 30, 24, 18, 12, 6],
-//     wins [19] = new array[37, 31, 25, 19, 13],
-//     wins [20] = new array[38, 32, 26, 20],
-//
-//     //DIAGONAL2
-//
-//     wins [21] = new array[27, 19, 11, 3],
-//     wins [22] = new array[34, 26, 18, 10, 2],
-//     wins [23] = new array[41, 33, 25, 17, 9, 1],
-//     wins [24] = new array[40, 32, 24, 16, 8, 0],
-//     wins [25] = new array[39, 31, 23, 15, 7],
-//     wins [26] = new array[38, 30, 22, 14]
-//   ]
-//
-//
-// //function wins(array){
-// // switch (if (true) {
-// //
-// // }) {
-// //   case expression:
-// //
-// //     break;
-// //   default:
-// //
-// // }
-// //
-// // option()
-// //
-// // const winner={
-// //    for ( i = 0; i < 4.length; i++) {
-// //      4[i]
-// //    }
-// //   }
-//
-// //GRID
-// //   var createGrid = x
-// //   function createGrid(grid) {
-// //     for (let rows = 6; rows < x; rows++) {
-// //       for (let columns = 7; columns < x; columns++);
-// //     }
-// //   }
-// // }
-// //
-// //
-// // document.getElementById('createGrid').innerHTML = 'grid'
-// //   var i = 0;
-// //   while (i < array.length) {
-// //     text += array[i] + "<br>";
-// //     i++;'<br>'
-// //   }
-// //
-// // const winner={
-// //   // for ( i = 0; i < 4.length; i++) {
-// //   //   4[i]
-// //   // }
-// //   }
-// //   const mac = Math.floor(Math.random())
-// //
-// //   document.getElementById('winner').innerHTML = text
-// //   }
-// //
-// // const winner = function () {
-// //   if (human === [0][0],[0][1],[0][2],[0][3])
-// //     console.log('you win')
-// //     // else
-//
-// // const fix = function() {
-// //   for ([0][0] === 0)}
-// //     if ([0][1] === 0){
-// //       if ([0][2] === 0){
-// //         if ([0][3] === 0);
-// //       }
-// //     }
-// //   }
-// // }
-// //
-// //   // const winner = box[mac][human][fix]
-// //
-// // console.log(option)
-// //   //       for (human = 0; human < 6; human++);
-// //   //        for (mac = 0; mac < 7; mac++)
-// //   //
-// //   // {
-// //   //   function winner(){
-// //   //
-// //   // }
-// // // }
-// // document.getElementById('winner').innerHTML = fix[winner]
-// //PARA CAMBIAR EL COLO R DE LAS FICAHS
-//
-// // function changeColor(evt){
-// //   var clickedOn = evt.target;
-// //   // for HTML
-// //   clickedOn.style.backgroundColor = '#f00';
-// //
-// //   // for SVG
-// //   clickedOn.setAttribute('fill','red');
-// // }
-// // mySquare.addEventListener('click',changeColor,false);
 
+/* set the global variables so we can use them wihin functions */
+var game_active = false; // this is a boolean (true/false values only).  This will be used to prevent being able to drop pieces once the game is over
+var active_player = 0; // the # of the active player - 1 or 2.  Default is 0, meaning no active player
+var gameboard = []; // define the gameboard as an array.  We will later set it up as a multi-dimensional array, to represent the col/row value for the game board
+var player_color = []; //define player_color as an array
+player_color[1] = "red"; //set the player_color for player 1 to "red"
+player_color[2] = "blue"; // set the player_color for player 2 to "blue"
 
-const checkWinOrLose( grid[][7], result, rowNum) {
-//  For checking whether any win or lose condition is reached. Returns 1 if win or lose is reached. else returns 0
-//  grid[][] is the 6X7 matrix
-//  result is the column number where the last coin was placed
-//  rowNum is the row number where the last coin was placed
+function beginGame() {
+  //don't reset the game until the last one is done.  So if the game is still active, return (don't continue with
+  //the function)  When you return, the rest of the function is skipped, and the value you return will be
+  //passed to the function that called the function.  Since beginGame is not called as a part of a different
+  //function, it doesn't matter if you return true or false.
+  if (game_active == true) return false;
 
+  game_active = true;  //We're starting the game, so make game_active = true
+  /* Reset the gameboard to be all 0.  We are going to use a multi-dimensional array - so every
+  section of the board will be represented by a point on the grid - X and Y (col and row).  Top left will be
+  0,0 and as it moves to the right, that will be +x and down will be +y.
+  For example, the values of the board will be:
+  | 0,0 | 0,1 | 0,2 | 0,3 | 0,4 | 0,5 | 0,6 |
+  | 1,0 | 1,1 | 1,2 | 1,3 | 1,4 | 1,5 | 1,6 |
+  | 2,0 | 2,1 | 2,2 | 2,3 | 2,4 | 2,5 | 2,6 |
+  | 3,0 | 3,1 | 3,2 | 3,3 | 3,4 | 3,5 | 3,6 |
+  | 4,0 | 4,1 | 4,2 | 4,3 | 4,4 | 4,5 | 4,6 |
+  | 5,0 | 5,1 | 5,2 | 5,3 | 5,4 | 5,5 | 5,6 |
 
+  */
+  for (row=0; row<=5; row++) {
+    gameboard[row] = [];
+    for (col=0; col<=6; col++) {
+      gameboard[row][col] = 0;
+    }
+  }
 
-// Winning vertically
-wins[0]  = array(0, 7,  14, 21, 28, 35);
-wins[1]  = array(1, 8,  15, 22, 29, 36);
-wins[2]  = array(2, 9,  16, 23, 30, 37);
-wins[3]  = array(3, 10, 17, 24, 31, 38);
-wins[4]  = array(4, 11, 18, 25, 32, 39);
-wins[5]  = array(5, 12, 19, 26, 33, 40);
-wins[6]  = array(6, 13, 20, 27, 34, 41);
-// Winning horizontally
-wins[7]  = array(0,   1,  2,  3,  4,  5,  6);
-wins[8]  = array(7,   8,  9, 10, 11, 12, 13);
-wins[9]  = array(14, 15, 16, 17, 18, 19, 20);
-wins[10] = array(21, 22, 23, 24, 25, 26, 27);
-wins[11] = array(28, 29, 30, 31, 32, 33, 34);
-wins[12] = array(35, 36, 37, 38, 39, 40, 41);
-// Winning diagonally, left to right
-wins[13] = array(14, 22, 30, 38);
-wins[14] = array(7, 15, 23, 31, 39);
-wins[15] = array(0, 8, 16, 24, 32, 40);
-wins[16] = array(1, 9, 17, 25, 33, 41);
-wins[17] = array(2, 10, 18, 26, 34);
-wins[18] = array(3, 11, 19, 27);
-//Winning diagonally, right to left
-wins[19] = array(20, 26, 32, 38);
-wins[20] = array(13, 19, 25, 31, 37);
-wins[21] = array(6,  12, 18, 24, 30, 36);
-wins[22] = array(5,  11, 17, 23, 29, 35);
-wins[23] = array(4,  10, 16, 22, 28);
-wins[24] = array(3,   9, 15, 21);
+  drawBoard(); // call the function to draw the board.
+  active_player = 1; //set the first player as their turn
+  setUpTurn(); //get ready for the player's turn
+}
+
+/* drawBoard will draw the board - it will update each item to make sure it is the appropriate value */
+function drawBoard() {
+  checkForWin(); //check to see if any player has won.
+  for (col = 0; col<=6; col++) {
+    for (row=0; row<=5; row++) {
+      //Set the inner HTML of the square (a td) to be a span with the class of 'piece' and 'player' + the value of that
+      //gameboard piece.  Using CSS, you can style player0, player1 and player2 so that the square will appear correctly.
+      document.getElementById('square_'+row+'_'+col).innerHTML ="<span class='piece player"+gameboard[row][col]+"'> </span>";
+    }
+  }
+}
+
+function checkForWin() {
+  /* There are many ways this algorithm can be accomplished.  Basically you want to check all possibility for a win.
+  Given the size of the board, checking all possibilities will not be a huge task for the computer, so I will go
+  with an easy to understand, straightforward algorithm */
+  /* Ultimately there are 4 ways to win - left-to-right, diagnol up, diagnol down, and top to bottom.  This
+  function will check each of these situations twice - one for each player. */
+
+  //check left-to-right
+  //check for player 1 and 2
+  for (i=1; i<=2; i++) {
+    //since a winning row must be 4 long, we only need to check the first 3 rows, 0,1,and 2
+    for (col = 0; col <=3; col++) {
+      for (row = 0; row <=5; row++) {
+        //check to see if the gameboard item is set to the player we are checking, if so, lets check the next 3 for a match
+        if (gameboard[row][col] == i) {
+          if ((gameboard[row][col+1] == i) && (gameboard[row][col+2] == i) && (gameboard[row][col+3] == i)) {
+            endGame(i);//a match has been made, so run EndGame with the player that had the win
+            return true; //stop checking for a win - the game is over.
+          }
+        }
+      }
+    }
+  }
+
+  //check top-to-bottom
+  for (i=1; i<=2; i++) {
+    //since a winning row must be 4 long, we only need to check the first 3 rows, 0,1,and 2
+    for (col = 0; col <=6; col++) {
+      for (row = 0; row <=2; row++) {
+        //check to see if the gameboard item is set to the player we are checking, if so, lets check the next 3 for a match
+        if (gameboard[row][col] == i) {
+          if ((gameboard[row+1][col] == i) && (gameboard[row+2][col] == i) && (gameboard[row+3][col] == i)) {
+            endGame(i); //a match has been made - run endGame for the player who had the match.
+            return true; //stop checking for a win - the game is over.
+          }
+        }
+      }
+    }
+  }
+
+  //check diagnol down
+  for (i=1; i<=2; i++) {
+    //since a winning row must be 4 long, we only need to check the first 3 rows, 0,1,and 2
+    for (col = 0; col <=3; col++) {
+      //we also only need to check the bottom most columns - as the win must be upwards
+      for (row = 0; row <=2; row++) {
+        //check to see if the gameboard item is set to the player we are checking, if so, lets check the next 3 for a match
+        if (gameboard[row][col] == i) {
+          if ((gameboard[row+1][col+1] == i) && (gameboard[row+2][col+2] == i) && (gameboard[row+3][col+3] == i)) {
+            endGame(i);
+            return true;
+          }
+        }
+      }
+    }
+  }
+
+  //check diagnol up
+  for (i=1; i<=2; i++) {
+    //since a winning row must be 4 long, we only need to check the first 3 rows, 0,1,and 2
+    for (col = 0; col <=3; col++) {
+      //we also only need to check the bottom most columns - as the win must be upwards
+      for (row = 3; row <=5; row++) {
+        //check to see if the gameboard item is set to the player we are checking, if so, lets check the next 3 for a match
+        if (gameboard[row][col] == i) {
+          if ((gameboard[row-1][col+1] == i) && (gameboard[row-2][col+2] == i) && (gameboard[row-3][col+3] == i)) {
+            endGame(i);
+            return true;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* endGame will end the game - any additional functions or things you want to happen when the game is over can go here */
+function endGame(winningPlayer) {
+  game_active = false; //set the "game_active" to false, so that it can be started again.
+  document.getElementById('game_info').innerHTML = "Winner: " + winningPlayer; //set the "game_info" to the winner and the winning player #
+}
+
+/* setUpTurn will display who is the active player */
+function setUpTurn() {
+  if (game_active) { //only run this is the game is active.
+    //display the current player, and create a <span> with the class of the player# so that it will show the color.
+    document.getElementById('game_info').innerHTML = "Current Player: Player " + active_player + " <span class='player"+active_player+"'>(" + player_color[active_player] + ")</span>";
+  }
+}
+
+/* drop will add a piece to the lowest available column */
+function drop(col) {
+  /* Look for the lowest point in this row that is open */
+  //the opposite of our loop above - as we're going to start from the bottom looking for an open slot
+  for (row=5; row>=0; row--) { //note: we are using row--, which will reduce the value of row by 1, the opposted of ++
+    if (gameboard[row][col] == 0) {
+      //set the empty row to the active player's number
+      gameboard[row][col] = active_player;
+      drawBoard(); // draw the board.
+      //change the active players turn:
+      if (active_player == 1) {
+        active_player = 2;
+      } else {
+        active_player = 1;
+      }
+      //there is also a fancy way of doing this call a ternary assignment that looks like this: active_player = (active_player == 1) ? 2 : 1;
+
+      setUpTurn(); //display who is the active player
+
+      //stop looking for empty spaces
+      return true;
+    }
+  }
+}
