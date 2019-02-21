@@ -29,7 +29,12 @@ $(() => {
         for (let row = 0; row <=5; row++) {
           if (grid[row][col] === i) {
             if ((grid[row][col+1] === i) && (grid[row][col+2] === i) && (grid[row][col+3] === i)) {
-              alert('something happened')
+              if (play1 === 1) {
+                alert('player2 wins')
+              } else {
+                play1 = 1
+                alert('player1 wins')
+              }
               endGame(i)
               return true
             }
@@ -43,7 +48,12 @@ $(() => {
         for (let row = 0; row <=2; row++) {
           if (grid[row][col] === i) {
             if ((grid[row+1][col] === i) && (grid[row+2][col] === i) && (grid[row+3][col] === i)) {
-              alert('something happened')
+              if (play1 === 1) {
+                alert('player2 wins')
+              } else {
+                play1 = 1
+                alert('player1 wins')
+              }
               endGame(i)
               return true
             }
@@ -57,7 +67,12 @@ $(() => {
         for (let row = 0; row <=2; row++) {
           if (grid[row][col] === i) {
             if ((grid[row+1][col+1] === i) && (grid[row+2][col+2] === i) && (grid[row+3][col+3] === i)) {
-              alert('something happened')
+              if (play1 === 1) {
+                alert('player2 wins')
+              } else {
+                play1 = 1
+                alert('player1 wins')
+              }
               endGame(i)
               return true
             }
@@ -71,20 +86,20 @@ $(() => {
         for (let row = 3; row <=5; row++) {
           if (grid[row][col] === i) {
             if ((grid[row-1][col+1] === i) && (grid[row-2][col+2] === i) && (grid[row-3][col+3] === i)) {
-              if (play1 === 0){
+              if (play1 === 1) {
+                alert('player2 wins')
+              } else {
+                play1 = 1
                 alert('player1 wins')
-            } else if (false){
-              alert('player2 wins')
+              }
+            }
+            endGame(i)
+            return true
           }
-       }
-          endGame(i)
-          return true
         }
       }
     }
   }
-
-
   function coin(e) {
     const col = e.target.dataset.col
     for (let row=5; row>=0; row--) {
