@@ -1,86 +1,46 @@
-/*
-
-
 body {
-  background-color: red;
+  background-color: rgba(210,210,210);
   justify-content: center;
-  text-align: center;
-
+  align-items: center;
 }
-.box {
-  height: 38px;
-  width: 38px;
-  background: blue;
-  border-radius: 20px;
-  justify-content: center;
-  text-align: center;
-  display: inline-block;
-  margin: 5px;
-
-}
-.coinsMac, .coinsHuman {
-  background-color: black;
-  border: 2px;
-  border-radius: 20px;
-  display: inline-block;
-  height: 30px;
-  width: 60px;
-}
-.square {
-  background-color: white;
-  border-radius: 10px;
-  height: 310px;
-  width: 375px;
-  margin: 60px;
-}
-.option {
-
+button {
+  height: 20px;
+  width: 40px;
 }
 
-footer {
-  margin: 50px;
-} */
-body {
+
+.clickButton {
   background-color: red;
+  height: 42px;
+  width: 42px;
+  border-radius: 24px;
+  cursor: pointer;
 }
-  .click_button {
-    height: 42px;
-    width: 42px;
-    border-radius: 24px;
-    background-color: rgba(255,0,0,1);
-    cursor: pointer;
-  }
 
-  /* Make each piece square - 32x32, set the border-radius to 16px (so that it appears round) and center it using margin-left
-  and margin-right: auto */
-  .piece {
-    background-color: white;
-    height: 32px;
-    width: 32px;
-    display:block;
-    border-radius: 16px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.piece {
+  height: 32px;
+  width: 32px;
+  background-color: #DDFF00;
+  display:block;
+  border-radius: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  /* Player 0 (no player) will have a light-grey background */
-  .player0 {
-    background-color: #DDDDDD; /* hex colors were used, but rgb/rgba could be used as well */
-  }
+.player0 {
+  background-color: #DDDDDD;
+}
 
-  /* player 1 will have a red background */
-  .player1 {
-    background-color: #FF0000;
-  }
+.player1 {
+  background-color: #FF0000;
+}
 
-  /* player 2 will have a blue background */
-  .player2 {
-    background-color: #0000FF;
-  }
+.player2 {
+  background-color: #DD00FF;
+}
 
-  /* set the board square to having a dark-grey border, and to be 36x36 square */
-  .board_square {
-    border: 1px solid #555555;
-    height: 36px;
-    width: 36px;
-  }
+.boardSquare {
+  border: 1px solid #555555;
+  height: 36px;
+  width: 36px;
+}
