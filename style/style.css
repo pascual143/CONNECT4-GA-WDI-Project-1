@@ -1,23 +1,20 @@
 body {
   background-color: rgba(210,210,210);
-  justify-content: center;
-  align-items: center;
 }
-button {
+.begin {
   height: 20px;
   width: 40px;
 }
 
-
-.clickButton {
+.coinRed {
   background-color: red;
-  height: 42px;
-  width: 42px;
+  height: 32px;
+  width: 32px;
   border-radius: 24px;
   cursor: pointer;
 }
 
-.piece {
+.coinYellow{
   height: 32px;
   width: 32px;
   background-color: #DDFF00;
@@ -39,8 +36,18 @@ button {
   background-color: #DD00FF;
 }
 
-.boardSquare {
+.grid {
   border: 1px solid #555555;
-  height: 36px;
-  width: 36px;
+  height: 42px;
+  width: 42px;
+  margin: 4px;
+  border-radius: 4px;
+}
+
+.square {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 300px;
 }

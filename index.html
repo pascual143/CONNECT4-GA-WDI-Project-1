@@ -3,8 +3,8 @@
 	<head>
 		<title>Connect Four</title>
     <link rel="stylesheet" href="style/style.css">
-		<script type="text/javascript" src="scripts/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="scripts/main.js"></script>
 
 	</head>
 	<body>
@@ -12,30 +12,68 @@
     <!-- <head>
       <h1>CONNECT 4</h1>
   		<p>To win Connect Four you must be the first player to get four of your colored checkers in a row either horizontally, vertically or diagonally. Contents: Connect Four will come with a grid, 2 end supports, 21 red checkers and 21 black checkers, and the official Connect Four game rules and instructions.</p>
-  		<p></p>
     </head> -->
 
 		<button id="begin">START THE GAME</button>
 		<div id="grid">
 			<div id="gameInfo">
 			</div>
-			<table id="gameTable">
-				<thead>
-          <tr>
-      </tr>
-					<tr>
-						<td><button onclick="coin(0)">coin</button></td>
-						<td><button onclick="coin(1)">coin</button></td>
-						<td><button onclick="coin(2)">coin</button></td>
-						<td><button onclick="coin(3)">coin</button></td>
-						<td><button onclick="coin(4)">coin</button></td>
-						<td><button onclick="coin(5)">coin</button></td>
-						<td><button onclick="coin(6)">coin</button></td>
-					</tr>
-          <td id="square + row + " "+ col +" class='boardSquare'></td>
-				</thead>
-			</table>
-			<div id="gameStatus">
+			<div id="gameTable">
+           <div class="buttons">
+						<button class="coin-btn" data-col="0">token</button>
+						<button class="coin-btn" data-col="1">token</button>
+						<button class="coin-btn" data-col="2">token</button>
+				 	  <button class="coin-btn" data-col="3">token</button>
+					  <button class="coin-btn" data-col="4">token</button>
+						<button class="coin-btn" data-col="5">token</button>
+						<button class="coin-btn" data-col="6">token</button>
+         </div>
+
+          <div class="square">
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+              <div class="grid"></div>
+            </div>
+          </div>
 			</div>
 		</div>
 
