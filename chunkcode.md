@@ -22,46 +22,7 @@ function option(human) {
           $('#box').fadeOut(1000);
       });
 
-  //
-  //        -------------------- */
-  //
-  //     $('#box').click(function() {
-  //         alert('you just clicked the box');
-  //     });
-  //
-  //     $("input").blur(function() {
-  //
-  //         if( $(this).val() == "" ) {
-  //             $(this).css('border','solid 1px red');
-  //             $('#box').text('Forgot to add text?');
-  //         }
-  //
-  //     });
-  //
-  //     $("input").keydown(function() {
-  //
-  //         if( $(this).val() !== "" ) {
-  //             $(this).css('border','solid 1px #777');
-  //             $('#box').text('Thanks for that!');
-  //         }
-  //
-  //     });
-  //
-  //     $('#box').hover(function() {
-  //
-  //         $(this).text('you hovered in!');
-  //
-  //     }, function() {
-  //
-  //         $(this).text('you hovered out!');
-  //
-  //     });
-  //
-  //
-  //     // Click the GO button
-  //     $('#go').click(function() {
-  //
-  //
+
   //         // build a function that checks to see if a car has won the race
   //         function checkIfComplete() {
   //
@@ -135,68 +96,6 @@ function option(human) {
   //     });
 
   // });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  const resultText = [ 'YOU DROP', 'YOU WIN', 'LOOOOOOOSER!!!']
-  //  const name = ["stone", "paper", "scissors", "lizard", "spoke"]
-
-  const game = [
-
-    [0,1,2,2,1],
-    [2,0,1,1,2],
-    [1,2,0,2,1],
-    [1,2,1,0,2],
-    [2,1,2,1,0]
-
-    [0,1,2,2,1],
-    [2,0,1,1,2],
-    [1,2,0,2,1],
-    [1,2,1,0,2],
-    [2,1,2,1,0]
-  ]
-
-  const result = game[mac][human]
-
-
-  document.getElementById('result').innerHTML = resultText[result]
-}
-</div>
-  <h2>CLICK IN TO TRY TO WIN TO THE COMPUTER</h2>
-    <button onclick="option(0)" name="x"><img src="images/stone.png" alt=""></button>
-    <button onclick="option(1)" name="paper"><img src="images/paper.png" alt=""></button>
-
-  <div>
-
-
 
 
 

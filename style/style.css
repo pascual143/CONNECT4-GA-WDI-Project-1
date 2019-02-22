@@ -4,8 +4,11 @@ body {
 .begin {
   height: 20px;
   width: 40px;
+  margin: 30px;
 }
+.gameInfo {
 
+}
 .coinRed {
   background-color: red;
   height: 32px;
@@ -50,4 +53,10 @@ body {
   flex-wrap: wrap;
   width: 400px;
   height: 300px;
+  padding: 10px;
+}
+
+footer {
+    padding: 20px;
+    justify-content: center;
 }
