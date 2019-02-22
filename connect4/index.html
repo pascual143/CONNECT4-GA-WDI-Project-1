@@ -1,32 +1,38 @@
 <!DOCTYPE HTML>
-<html>
+<html class="nes-container is-rounded is-dark">
 	<head>
 		<title>Connect Four</title>
     <link rel="stylesheet" href="style/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script type="text/javascript" src="scripts/main.js"></script>
-
+    <link href="https://unpkg.com/nes.css@2.0.0/css/nes.min.css" rel="stylesheet" />
 	</head>
 	<body>
     </div>
-
     <head class="welcome">
-      <div class="name">Player One
+      <div class="playersname" class="nes-container is-rounded is-dark is-centered">
+        <div class="nes-container is-rounded is-dark is-centered">
+        <h1 class="nes-container is-rounded is-dark is-centered"><i class="nes-icon coin is-medium"></i>CONNECT 4<i class="nes-icon coin is-medium"></i></h1>
+    		<p>To win Connect Four you must be the first player to get four of your colored checkers in a row either horizontally, vertically or diagonally. Contents: Connect Four will come with a grid, 2 end supports, 21 red checkers and 21 black checkers, and the official Connect Four game rules and instructions.</p>
+          </div>
+      </div>
+      <div class="name nes-container is-rounded is-dark is-centered">Player One
         <input type="text" name="" value="name">
       </div>
-      <div class="name">
-        <input type="text" name="" value="name">Player Two
+      <div class="name nes-container is-rounded is-dark is-centered">Player Two
+        <input type="text" name="" value="name">
       </div>
-      <h1>CONNECT 4</h1>
-  		<p>To win Connect Four you must be the first player to get four of your colored checkers in a row either horizontally, vertically or diagonally. Contents: Connect Four will come with a grid, 2 end supports, 21 red checkers and 21 black checkers, and the official Connect Four game rules and instructions.</p>
     </head>
+<div class="begin">
 
-		<button id="begin">START THE GAME</button>
-		<div id="grid">
+
+		<button id="begin" class="nes-btn is-error">START THE GAME</button>
+</div>
+    <div id="grid">
 			<div id="gameInfo">
 			</div>
-			<div id="gameTable">
-           <div class="buttons">
+			<div id="gameTable" class="nes-container is-rounded is-dark is-centered">
+          <div class="buttons">
 						<button class="coin-btn" data-col="0">token</button>
 						<button class="coin-btn" data-col="1">token</button>
 						<button class="coin-btn" data-col="2">token</button>
@@ -36,7 +42,13 @@
 						<button class="coin-btn" data-col="6">token</button>
          </div>
 
+
+
+          <div class="nes-container is-rounded is-dark i">
+              <div class="gridCenter">
           <div class="square">
+
+
               <div class="grid"></div>
               <div class="grid"></div>
               <div class="grid"></div>
@@ -79,8 +91,10 @@
               <div class="grid"></div>
               <div class="grid"></div>
               <div class="grid"></div>
+              </div>
             </div>
           </div>
+        </div>
 			</div>
 		</div>
       <footer><small>&copy; Copyright 2019, Studio Vila</small></footer>

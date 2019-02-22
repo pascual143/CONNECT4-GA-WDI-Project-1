@@ -46,7 +46,16 @@ body {
   margin: 4px;
   border-radius: 4px;
 }
-
+.nes-btn {
+  height: 42px;
+  width: 720px;
+}
+.begin {
+  justify-content: center;
+  align-items: center;
+  padding-left: 300px;
+  padding-bottom: 50px;
+}
 .square {
   display: flex;
   flex-direction: row;
@@ -54,8 +63,11 @@ body {
   width: 400px;
   height: 300px;
   padding: 10px;
+  margin-left: 80px;
 }
-
+.gridCenter {
+  padding-left: 330px;
+}
 footer {
     padding: 20px;
     justify-content: center;

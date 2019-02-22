@@ -138,7 +138,7 @@ $(() => {
   }
   function setUpTurn() {
     if (game) {
-      $('#gameInfo').append('Current Player: Player' + play1)
+      $('#gameInfo').append('Current Player: ' + play1 )
     }
   }
 
